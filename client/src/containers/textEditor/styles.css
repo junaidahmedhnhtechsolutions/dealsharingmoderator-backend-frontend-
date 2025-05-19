@@ -1,0 +1,69 @@
+/* TextEditor.css */
+
+/* quill */
+#textEditor .quill .ql-container .ql-editor {
+  min-height: 10rem !important;
+}
+
+/* Customize text color */
+/* #textEditor .quill  */
+.ql-editor {
+  color: #ffffffe6; /* your desired text color */
+  /* font-size: 16px; */
+}
+
+/* Custom placeholder color */
+.ql-editor::before {
+  color: #9ca3af !important; /* Tailwind's gray-400 */
+  font-style: italic; /* Optional: make it look like a placeholder */
+}
+
+#textEditor .quill {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: var(--color-gray-900);
+  /* background-color: hsl(
+    var(--heroui-default-100) /
+      var(--heroui-default-100-opacity, var(--tw-bg-opacity))
+  ); */
+}
+
+#textEditor .quill .ql-toolbar.ql-snow {
+  /* border-top-left-radius: 8px;
+  border-top-right-radius: 8px; */
+  border: none;
+  background-color: #3f3f46;
+}
+
+#textEditor .quill .ql-container.ql-snow {
+  /* border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px; */
+  border: none;
+}
+
+/* Customize toolbar icon color */
+.ql-toolbar .ql-stroke {
+  stroke: #9ca3af !important;
+}
+
+.ql-toolbar .ql-fill,
+.ql-toolbar .ql-header .ql-picker-label {
+  fill: #9ca3af !important;
+  color: #9ca3af !important;
+}
+
+/* Optional: Customize hover/focus color of icons */
+.ql-toolbar button:hover .ql-stroke,
+.ql-toolbar button:hover .ql-fill {
+  /* stroke: #7c3aed !important; */
+  /* fill: #7c3aed !important; */
+  stroke: #ffffff !important;
+  color: #ffffff !important;
+}
+
+/* Customize active button color */
+.ql-toolbar .ql-active .ql-stroke,
+.ql-toolbar .ql-active .ql-fill {
+  stroke: #1d4ed8 !important;
+  fill: #1d4ed8 !important;
+}

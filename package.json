@@ -1,0 +1,9 @@
+{
+  "name": "meta-preview-app",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix client\" \"node server/server.js\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
